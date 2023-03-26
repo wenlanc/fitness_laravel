@@ -1,0 +1,80 @@
+html.lw-light-theme .masthead {
+    background: url(../../imgs/home/mask-group@1x.svg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.lw-form-in-process,
+.lw-form-processing {
+  user-select: none; }
+  .lw-form-in-process *,
+  .lw-form-processing * {
+    pointer-events: none; }
+  .lw-form-in-process .lw-spinner-box,
+  .lw-form-processing .lw-spinner-box {
+    left: calc(50% - 50px);
+    top: calc(50% - 100px);
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    z-index: 1;
+    border-radius: 8px;
+    width: 80px;
+    overflow: hidden;
+    padding: 10px 0px 0 12px;
+    background-color: rgba(106, 119, 132, 0.4); }
+    .lw-form-in-process .lw-spinner-box ~ *,
+    .lw-form-processing .lw-spinner-box ~ * {
+      filter: blur(1px) grayscale(0.5);
+      -webkit-filter: blur(1px) grayscale(0.5); }
+    .lw-form-in-process .lw-spinner-box .spinner-border,
+    .lw-form-processing .lw-spinner-box .spinner-border {
+      margin-bottom: 4px; }
+    .lw-form-in-process .lw-spinner-box small,
+    .lw-form-processing .lw-spinner-box small {
+      display: block; }
+
+      .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 60px; }
+      
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #fff transparent transparent transparent; }
+      
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s; }
+      
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s; }
+      
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s; }
+      
+      ::-webkit-calendar-picker-indicator {
+        filter: invert(1); }
+      
+      .sw .toolbar > .btn.disabled, .sw .toolbar > .btn:disabled {
+        cursor: not-allowed; }
+      
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg); }
+        100% {
+          transform: rotate(360deg); } }

@@ -1,0 +1,84 @@
+//
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
+@import "~noty/src/themes/bootstrap-v4.scss";
+
+.modal .modal-dialog {
+    transition: -webkit-transform .15s ease-out;
+    transition: transform .15s ease-out;
+    transition: transform .15s ease-out, -webkit-transform .15s ease-out;
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #32353b;
+    background-clip: padding-box;
+    border: 0px solid rgba(37,40,46,0.2);
+    border-radius: .25rem;
+    outline: 0;
+}
+
+.cropper-example-container,
+        .cropper-example-preview {
+          background-color: #f7f7f7;
+          width: 80%;
+          margin-left: 10%;
+          text-align: center;
+        }
+
+        /* Container */
+        .cropper-example-container {
+          min-height: 200px;
+          max-height: 400px;
+          margin-bottom: 1rem;
+          overflow: hidden;
+        }
+
+        .cropper-example-container>img {
+          max-width: 100%;
+        }
+
+        @media (min-width: 768px) {
+          .cropper-example-container {
+            min-height: 400px;
+          }
+        }
+
+#photoModal{
+    .modal-content{
+        border-radius: 20px;
+        .modal-header{
+            border-bottom: none;
+        }
+        .modal-body {
+            padding: 0 1rem 0 1rem;
+            .cropper-example-container{
+                border: 1px dashed #ff4141;
+                border-radius: 5px;
+            }
+        }
+        .modal-footer {
+            border-top: none;
+            padding-top: 0px;
+        }
+    }
+}
+.selectize-input {
+    line-height: 2rem !important;
+    background: transparent !important;
+    border-radius: 9px !important;
+}
+
+.selectize-control {
+    padding: 0px;
+    border: none;
+    background-color: inherit;
+}
